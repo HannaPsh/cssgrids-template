@@ -1,9 +1,14 @@
+*{
+  box-sizing: border-box;
+}
 body {
   background: url(../img/12_col.gif) center top repeat-y;
   background-size: 90%;
+  
 }
 
 #main-container {
+  
   width: 89.5%;
   margin: auto;
   display: grid;
@@ -37,7 +42,7 @@ section {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 10px;
-    padding: 10px 1%; 
+    padding: 10px 1%;
   }
   #footer-section1,
   #footer-section2,
@@ -168,6 +173,81 @@ section {
     grid-column: 4/5;
   }
 }
+
+header {
+  padding: 1%;
+  background-color: beige;
+  display: flex;
+  flex-flow: row wrap;
+  border: 1px solid black;
+  align-content: center;
+  justify-content:flex-start;
+  gap: 10px;
+  
+}
+#header-button1 {
+  flex: 1 1 1;
+}
+#header-button2 {
+  flex: 1 1 1;
+}
+#header-button3 {
+  flex: 1 1 1;
+}
+#header-button4 {
+  flex: 1 1 1;
+  margin-left: auto;
+}
+aside{
+  display:flex;
+  background-color: beige;
+  flex-flow:column wrap;
+  padding: 10% 5% 5% ;
+  row-gap: 10px;
+}
+#aside-buttom1{
+
+}
+#aside-buttom2{
+
+}
+#aside-buttom3{
+
+}
+#aside-buttom4{
+
+}
+
+main{
+  display:flex;
+  background-color: beige;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 2%;
+  row-gap: 5px;
+  column-gap: 0.5%;
+  
+}
+#content-section1{
+  flex:1 1 230px;   /* 33% basis */
+}
+#content-section2{
+  flex:1 1 230px;
+}
+#content-section3{
+  flex:1 1 230px;
+}
+#content-section4{
+  flex:1 1 230px;
+}
+#content-section5{
+  flex:1 1 230px;
+}
+#content-section6{
+  flex:1 1 230px;
+}
+
+
 
 /*  Lösning 2: 
 Grid-areas*/
